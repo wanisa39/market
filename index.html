@@ -1,77 +1,74 @@
 <!DOCTYPE html>
 <html>
-<title>W3.CSS</title>
+<title>pai-ta-lad</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<body>
 
+<body>
 <header class="w3-panel w3-center ">
- <div class="header-logo">
-     <img src="ไป.png" style="width:80% alt="betagro logo"class="w3-hover-opacity "> 
-</div>
-</body>
-<body>										   
-<div class="w3-content w3-display-container">
-  <img class ="mySlides" src="1.JPG" style="width:100%" alt="ยรรยงค์"class="w3-middle ">
-  <div class="w3-display-topmiddle w3-container w3-large w3-container w3-padding-24 w3-panel w3-topbar w3-bottombar w3-border-black w3-pale-black w3-size-15">
-    <p>ต ล า ด ย ร ร ย ง ค์</p>
-	</div>
-</div>
-</body>
-
-<body>
-<div class="w3-content w3-display-container">
-  <img class ="mySlides" src="2.JPG" style="width:100%" alt="กิมหยง"class="w3-middle ">
-  <div class="w3-display-topmiddle w3-container w3-large w3-container w3-padding-24 w3-panel w3-topbar w3-bottombar w3-border-black w3-pale-black w3-size-15">
-    <p>ต ล า ด กิ ม ห ย ง</p>
-	</div>
-</div>
-</body>
-
+       <img src="ไป.png" style="width:80% alt="betagro logo"class="w3-hover-opacity w3-center ">
 
 <div class="w3-content w3-display-container">
-  <img class ="mySlides" src="3.JPG" style="width:100%" alt="คลองแห"class="w3-middle ">
-  <div class="w3-display-topmiddle w3-container w3-large w3-container w3-padding-24 w3-panel w3-topbar w3-bottombar w3-border-black w3-pale-black w3-size-15">
-    <p>ต ล า ด น้ำ ค ล อ ง แ ห</p>
-	</div>
+
+<div class="w3-display-container mySlides">
+  <img src="1.JPG" style="width:100%">
+  <div class="w3-display-topmiddle w3-large w3-container w3-padding-16 w3-black">
+    Trolltunga, Norway
+  </div>
 </div>
 
-
-
-<div class="w3-content w3-display-container">
-  <img class ="mySlides" src="4.JPG" style="width:100%" alt="โก้งโค้ง"class="w3-middle ">
-  <div class="w3-display-topmiddle w3-container w3-large w3-container w3-padding-24 w3-panel w3-topbar w3-bottombar w3-border-black w3-pale-black w3-size-15">
-    <p>ต ล า ด โ ก้ ง โ ค้ ง</p>
-	</div>
+<div class="w3-display-container mySlides">
+  <img src="2.JPG" style="width:100%">
+  <div class="w3-display-middle w3-large w3-container w3-padding-16 w3-black">
+    Northern Lights, Norway
+  </div>
 </div>
 
-
-<div class="w3-content w3-display-container">
-  <img class ="mySlides" src="5.JPG" style="width:100%" alt="อาเซียน"class="w3-middle ">
-  <div class="w3-display-middle w3-container w3-large w3-container w3-padding-24 w3-panel w3-topbar w3-bottombar w3-border-black w3-pale-black w3-size-15">
-    <p>ต ล า ด อ  า เ ซี ย น เ ท ร ด</p>
-	</div>
+<div class="w3-display-container mySlides">
+  <img src="3.JPG" style="width:100%">
+  <div class="w3-display-middle w3-large w3-container w3-padding-16 w3-black">
+    Beautiful Mountains
+  </div>
 </div>
 
-  <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
-  <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+<div class="w3-display-container mySlides">
+  <img src="4.JPG" style="width:100%">
+  <div class="w3-display-topright w3-large w3-container w3-padding-16 w3-black">
+    The Rain Forest
+  </div>
 </div>
+
+<div class="w3-display-container mySlides">
+  <img src="5.JPG" style="width:100%">
+  <div class="w3-display-middle w3-large w3-container w3-padding-16 w3-black">
+    Mountains!
+  </div>
+</div>
+
+<button class="w3-button w3-display-left w3-black" onclick="plusDivs(-1)">&#10094;</button>
+<button class="w3-button w3-display-right w3-black" onclick="plusDivs(1)">&#10095;</button>
+
+</div>
+
 <script>
 var slideIndex = 1;
 showDivs(slideIndex);
+
 function plusDivs(n) {
   showDivs(slideIndex += n);
 }
+
 function showDivs(n) {
   var i;
   var x = document.getElementsByClassName("mySlides");
-  if (n > x.length) {slideIndex = 1}    
+  if (n > x.length) {slideIndex = 1}
   if (n < 1) {slideIndex = x.length}
   for (i = 0; i < x.length; i++) {
-     x[i].style.display = "none";  
+     x[i].style.display = "none";
   }
-  x[slideIndex-1].style.display = "block";  
+  x[slideIndex-1].style.display = "block";
 }
 </script>
+
 </body>
 </html>
